@@ -1,7 +1,8 @@
 pygmail - A Python Library For Gmail
 
 
-Changes:
+Changes
+-------
 
 The get_mailboxes function changed to work with the mailboxes that their name containing 
 spaces as well as the other characters.
