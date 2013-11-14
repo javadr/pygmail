@@ -19,7 +19,7 @@ class pygmail(object):
 	def get_mailboxes(self):
 		rc, self.response = self.M.list()
 		for item in self.response:
-			self.mailboxes.append(item.split()[-1])
+			self.mailboxes.append(item.split('"')[-2])
 		return rc
 
 	def get_mail_count(self, folder='Inbox'):
